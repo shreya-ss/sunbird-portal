@@ -537,7 +537,7 @@ angular.module('playerApp')
       }
 
       var data = {
-        edata: this.bookmark_addedEventData(objId+edataId, edataId, pageId, objId),
+        edata: this.bookmark_addedEventData(pageId+edataId, edataId, pageId, objId),
         context: this.getContextData(contextData),
         object: this.getObjectData(objectData),
         tags: _.concat([], org.sunbird.portal.channel)
@@ -566,7 +566,7 @@ angular.module('playerApp')
       }
 
       var data = {
-        edata: this.bookmark_removedEventData(objId+edataId, edataId, pageId, objId),
+        edata: this.bookmark_removedEventData(pageId+edataId, edataId, pageId, objId),
         context: this.getContextData(contextData),
         object: this.getObjectData(objectData),
         tags: _.concat([], org.sunbird.portal.channel)
